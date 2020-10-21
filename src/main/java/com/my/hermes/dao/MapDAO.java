@@ -23,6 +23,7 @@ public class MapDAO {
 		try {
 			MapMapper mapper = session.getMapper(MapMapper.class);
 			mapper.mapwrite(vo);
+			System.out.println(vo);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
