@@ -105,8 +105,10 @@
             <div class="media block-6 services d-block text-center">
               <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-guarantee"></span></div></div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">합리적인 가격 비교</h3>
-                <p>호텔, 항공편, 주변시설을 합리적으로 비교하실 수 있습니다</p>
+              
+                <h3 class="heading mb-3"><a href="<c:url value='/tour'/>" style="color: black;">정보 검색</a></h3>
+                <p><a href="<c:url value='/tour'/>" style="color: black;">간단한 입력을 통해 쉽고 빠르게 환율, 항공편, 이벤트 정보를 검색할 수 있습니다.</a></p>
+               
               </div>
             </div>      
           </div>
@@ -114,8 +116,8 @@
             <div class="media block-6 services d-block text-center">
               <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-like"></span></div></div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">추천 여행 정보</h3>
-                <p>다른 사람이 추천한 여행 정보를 보거나, 나도 추천할 수 있습니다</p>
+                <h3 class="heading mb-3"><a href="<c:url value='/tour'/>" style="color: black;">추천 여행 정보</a></h3>
+                <p><a href="<c:url value='/tour'/>" style="color: black;">헤르메스가 제공하는 다양한 여행 정보를 알아보세요!</a></p>
               </div>
             </div>    
           </div>
@@ -123,8 +125,8 @@
             <div class="media block-6 services d-block text-center">
               <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-detective"></span></div></div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">주변의 시설을 한눈에 보기쉽게</h3>
-                <p>지도와 함께 언제, 어디서든 빠르게 주변정보를 파악하세요</p>
+                <h3 class="heading mb-3"><a href="<c:url value='/map/mapmain'/>" style="color: black;">지도 정보</a></h3>
+                <p><a href="<c:url value='/map/mapmain'/>" style="color: black;">지도와 함께 언제, 어디서든 빠르게 주변정보를 파악하세요</a></p>
               </div>
             </div>      
           </div>
@@ -132,8 +134,8 @@
             <div class="media block-6 services d-block text-center">
               <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-support"></span></div></div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">최고의 여행 도우미</h3>
-                <p>일본 여행은 Hermes 하나로 모든걸 해결할 수 있습니다</p>
+                <h3 class="heading mb-3"><a href="<c:url value='/board/boardmain'/>" style="color: black;">소통하는 게시판</a></h3>
+                <p><a href="<c:url value='/board/boardmain'/>" style="color: black;">게시판을 통해 회원들끼리 정보를 주고받아 보실 수 있습니다!</a></p>
               </div>
             </div>      
           </div>
@@ -144,16 +146,16 @@
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-5 heading-section ftco-animate">
-          	<span class="subheading">최고의 일본여행 사이트</span>
+          	<span class="subheading">단 하나의 일본 여행 사이트</span>
             <h2 class="mb-4 pb-3"><strong>왜</strong> 헤르메스를 사용할까요?</h2>
             <p>단 하나의 사이트로 일본 여행의 A-Z까지 한번에 해결할 수 있습니다.</p>
             <p>헤르메스가 처음이신 분은 이용 방법을 확인해주세요.</p>
-            <p><a href="<c:url value='/about'/>" class="btn btn-primary btn-outline-primary mt-4 px-4 py-3">이용 방법 알아보기</a></p>
+            <p style="text-align: center;"><a href="<c:url value='/about'/>" class="btn btn-primary btn-outline-primary mt-4 px-4 py-3">이용 방법 알아보기</a></p>
           </div>
 					<div class="col-md-1"></div>
           <div class="col-md-6 heading-section ftco-animate">
-          	<span class="subheading">읽을거리</span>
-            <h2 class="mb-4 pb-3"><strong>최신</strong> 여행 팁</h2>
+          	<span class="subheading">게시판</span>
+            <h2 class="mb-4 pb-3"><strong>함께 하는</strong> 여행 팁</h2>
           	<div class="row ftco-animate">
 		          <div class="col-md-12">
 		            <div class="carousel-testimony owl-carousel">
@@ -200,6 +202,7 @@
 		                </div>
 		              </div>
 		            </div>
+		            <p style="text-align: center;"><a href="<c:url value='/board/boardmain'/>" class="btn btn-primary btn-outline-primary mt-4 px-4 py-3">게시판 바로가기</a></p>
 		          </div>
 		        </div>
           </div>
@@ -219,79 +222,79 @@
     				<div class="destination-slider owl-carousel ftco-animate">
     					<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/tokyo'/>" class="img d-flex justify-content-center align-items-center" 
 		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">도쿄</a></h3>
+		    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/osaka'/>" class="img d-flex justify-content-center align-items-center" 
 		    					style="background-image: url(https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/mmgbxbfet2m7unj3yf4c/%EC%98%A4%EC%82%AC%EC%B9%B4%20%EC%95%84%ED%82%A4%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%AC%ED%8A%B8%20%EA%B3%A0%EC%B9%B4%ED%8A%B8.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">오사카</a></h3>
+		    						<h3><a href="<c:url value='/tour/osaka'/>">오사카</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/gobe'/>" class="img d-flex justify-content-center align-items-center" 
 		    					style="background-image: url('https://t1.daumcdn.net/cfile/tistory/2202BA345864C85D03');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">고베</a></h3>
+		    						<h3><a href="<c:url value='/tour/gobe'/>">고베</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/kyoto'/>" class="img d-flex justify-content-center align-items-center" 
 		    					style="background-image: url('https://cdn.osaka-info.jp/fixtures/around-kansai-kyoto_ko_008.jpg');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">교토</a></h3>
+		    						<h3><a href="<c:url value='/tour/kyoto'/>">교토</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/nara'/>" class="img d-flex justify-content-center align-items-center" 
 		    					style="background-image: url('https://resources.matcha-jp.com/archive_files/jp/2015/01/-2015-01-07-16.26.17.png');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">나라</a></h3>
+		    						<h3><a href="<c:url value='/tour/nara'/>">나라</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 		    				<div class="destination">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/yokohama'/>" class="img d-flex justify-content-center align-items-center" 
 		    					style="background-image: url('https://www.gotokyo.org/kr/destinations/beyond-tokyo/images/main_pc_yokohama.jpg');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<h3><a href="#">요코하마</a></h3>
+		    						<h3><a href="<c:url value='/tour/yokohama'/>">요코하마</a></h3>
 		    					</div>
 		    				</div>
 	    				</div>
