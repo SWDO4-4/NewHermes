@@ -86,6 +86,11 @@
                       <option value="">오사카</option>
                       <option value="">고베</option>
                       <option value="">교토</option>
+                      <option value="">후쿠오카</option>
+                      <option value="">나고야</option>
+                      <option value="">삿포로</option>
+                      <option value="">요코하마</option>
+                      <option value="">나라</option>
                     </select>
                   </div>
                 </div>
