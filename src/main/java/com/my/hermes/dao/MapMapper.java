@@ -10,6 +10,7 @@ public interface MapMapper {
 	// 지도 작성
 	public void mapwrite(MapVO vo);
 	
+	public void mapdelete(String map_title);
 	
 
 	

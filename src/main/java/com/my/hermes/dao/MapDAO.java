@@ -23,11 +23,25 @@ public class MapDAO {
 		try {
 			MapMapper mapper = session.getMapper(MapMapper.class);
 			mapper.mapwrite(vo);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 	}
+	
+	// 지도 작성
+		public void mapdelete(String map_title) {
+			
+			try {
+				MapMapper mapper = session.getMapper(MapMapper.class);
+				mapper.mapdelete(map_title);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
 	
 
 }
