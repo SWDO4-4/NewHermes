@@ -92,13 +92,7 @@
                 <input type="submit" class="search-submit btn btn-primary" value="Search">  
               </form>
             </div>
-            <p>알고싶은 정보를 선택하세요!</p>
-            <p class="browse d-md-flex">
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-fork"></i>음식점</a></span>
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-hotel"></i>호텔</a></span> 
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-meeting-point"></i>주변 관광 정보</a></span> 
-            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-shopping-bag"></i>쇼핑</a></span>
-            </p>
+
           </div>
         </div>
       </div>
