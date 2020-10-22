@@ -151,20 +151,20 @@
       <div class="container">
         <div class="row">
         	<div class="col-lg-3 sidebar">
-        		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">도시 검색</h3>
-        			<form action="#">
-        				<div class="fields">
-		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
-		              </div>
+<!--         		<div class="sidebar-wrap bg-light ftco-animate"> -->
+<!--         			<h3 class="heading mb-4">도시 검색</h3> -->
+<!--         			<form action="#"> -->
+<!--         				<div class="fields"> -->
+<!-- 		              <div class="form-group"> -->
+<!-- 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색"> -->
+<!-- 		              </div> -->
 		              
-		              <div class="form-group">
-		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
-		              </div>
-		            </div>
-	            </form>
-        		</div>	
+<!-- 		              <div class="form-group"> -->
+<!-- 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5"> -->
+<!-- 		              </div> -->
+<!-- 		            </div> -->
+<!-- 	            </form> -->
+<!--         		</div>	 -->
         		<table id="here"></table>
           </div>     
           <div class="col-lg-9">

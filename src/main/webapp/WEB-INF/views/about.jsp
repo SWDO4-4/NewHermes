@@ -71,62 +71,13 @@
         </div>
       </div>
     </div>
-
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row d-md-flex">
-	    		<div class="col-md-6 ftco-animate img about-image" 
-	    			style="background-image: url('<c:url value='/resources/images/about.jpg'/>');">
-	    		</div>
-	    		<div class="col-md-6 ftco-animate p-md-5">
-		    		<div class="row">
-			          <div class="col-md-12 nav-link-wrap mb-5">
-			            <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-			              <a class="nav-link active" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">1. 알아보기</a>
-			              <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">2. 계획하기</a>
-			              <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">3. 활용하기</a>
-			            </div>
-			          </div>
-		          <div class="col-md-12 d-flex align-items-center">  
-		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
-		              
-		              <div class="tab-pane fade show active" id="v-pills-whatwedo" role="tabpanel" aria-labelledby="v-pills-whatwedo-tab">
-		              	<div>
-			                <h2 class="mb-4">여행지 설정하기</h2>
-			              	<p>헤르메스가 제공하는 다양한 여행 정보를 보시고, 자유롭게 마음에 드는 여행지를 선택해 보세요!</p>
-			                <p>여행이 고민된다면, 게시판에서 제공하는 여행 팁과 QnA를 참고하세요! </p>
-				        </div>
-		              </div>
-
-		              <div class="tab-pane fade" id="v-pills-mission" role="tabpanel" aria-labelledby="v-pills-mission-tab">
-		                <div>
-			                <h2 class="mb-4">여행 계획하기</h2>
-			              	<p>헤르메스가 제공하는 다양한 여행 정보를 참고해서, 자신만의 여행 계획을 만들어 보세요!</p>
-			                <p>홈페이지에 다양한 이벤트 정보, 주변 지도 및 시설, 항공편과 날씨까지 한번에!</p>
-				        </div>
-		              </div>
-
-		              <div class="tab-pane fade" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
-		                <div>
-			                <h2 class="mb-4">더 활용하기</h2>
-			              	<p>여행을 가서도, 여행이 끝나도 헤르메스는 활용될 수 있습니다.</p>
-			                <p>여행 중이시라면 지도와 제공되는 주변 시설을 한번에, 여행 후에는 후기를 남겨서 다음 여행을 준비하세요!</p>
-				        </div>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
-    	</div>
-    </section>
-
+    
     <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-          	<span class="subheading">Q/A</span>
-            <h2 class="mb-4"><strong>자주 묻는 질문</strong></h2>
+          	<span class="subheading">이용 전에 확인!</span>
+            <h2 class="mb-4"><strong>헤르메스 이용 가이드</strong></h2>
           </div>
         </div>  
     		<div class="row">
@@ -142,8 +93,11 @@
 						        </div>
 						        <div id="menuone" class="collapse show">
 						          <div class="card-body">
-									<p>헤르메스는 일본 여행의 도우미입니다. 일본 전역에 대한 관광정보를 제공하고 항공편과 날씨정보를 통해 스마트한 예약이 가능하며,
-										지도와 함께 제공되는 주변 관광정보를 통해 여행 중에도 어디를 갈지 활용가능합니다. 
+						          <img src="<c:url value='/resources/images/about01.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+									<p>헤르메스는 일본 여행의 도우미입니다. 
+									주요 기능으로는 여행 정보, 지도, 게시판 기능을 포함하고 있습니다.
+									다양한 기능들을 통해 일본 여행의 전문가가 되어보세요! 
 									</p>
 						          </div>
 						        </div>
@@ -152,13 +106,16 @@
 						      <div class="card">
 						        <div class="card-header">
 										  <a class="card-link" data-toggle="collapse"  href="#menutwo" aria-expanded="false" aria-controls="menutwo">
-										 항공편 예약과 날씨정보에 대해서 
+										 여행 정보 기능 이용 방법
 										  <span class="collapsed"><i class="icon-plus-circle"></i></span><span class="expanded"><i class="icon-minus-circle"></i></span></a>
 						        </div>
 						        <div id="menutwo" class="collapse">
 						          <div class="card-body">
-								<p>헤르메스는 항공편예약은 항공편 API를 사용중이고, 날씨는 날씨 정보API를 사용하여 이용자분들께 제공하고 있습니다.
-									인터넷 환경 혹은 사이트 환경에 따라서 접속지연 및 표기오류가 나타날 수 있으니 양해 부탁드립니다.
+						          <img src="<c:url value='/resources/images/about02.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+								<p>여행 정보 페이지에 들어가시면
+								좌측 사이드 메뉴를 통해 항공편 정보, 환율 정보, 이벤트 정보를 열람하실 수 있습니다.
+								또한 여행지에 관한 자세한 정보와 날씨 정보를 열람하실 수 있습니다.
 								</p>
 						          </div>
 						        </div>
@@ -167,12 +124,19 @@
 						      <div class="card">
 						        <div class="card-header">
 										  <a class="card-link" data-toggle="collapse"  href="#menu3" aria-expanded="false" aria-controls="menu3">
-										   회원 가입 및 로그인이 정상적으로 작동되지 않습니다. 
+										   지도 정보 이용 방법
 										   <span class="collapsed"><i class="icon-plus-circle"></i></span><span class="expanded"><i class="icon-minus-circle"></i></span></a>
 						        </div>
 						        <div id="menu3" class="collapse">
 						          <div class="card-body">
-									<p>페이지 하단에 있는 주소로 문의주시기 바랍니다. </p>
+						          <img src="<c:url value='/resources/images/about03.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+									<p>출발지, 목적지, 도착지를 입력하시면 지도 정보와 함께 가는 방법을 제공합니다.
+									또한 하단의 메뉴를 통해 도보와 운전 두 가지의 경우를 확인 가능합니다.
+									또한 회원이시라면 입력했던 정보를 프로필에 저장하여 불러들일 수 있습니다.
+									주변 정보와 리뷰까지 제공됩니다!
+									
+									</p>
 						          </div>
 						        </div>
 						      </div>
@@ -182,12 +146,15 @@
     							<div class="card">
 						        <div class="card-header">
 										  <a class="card-link" data-toggle="collapse"  href="#menu4" aria-expanded="false" aria-controls="menu4">
-										  게시판엔 어떤 기능이 있나요? 
+										  게시판 활용하기
 										  <span class="collapsed"><i class="icon-plus-circle"></i></span><span class="expanded"><i class="icon-minus-circle"></i></span></a>
 						        </div>
 						        <div id="menu4" class="collapse">
 						          <div class="card-body">
-									<p>게시판은 회원들끼리 자유롭게 소통할 수 있는 공간입니다. 회원들간의 QnA나 여행 Tips등을 통해
+						          <img src="<c:url value='/resources/images/about04.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+									<p>게시판은 회원들끼리 자유롭게 소통할 수 있는 공간입니다. 작성글을 게시할 수 있으며 덧글도 달 수 있습니다.
+									회원들간의 QnA나 여행 Tips등을 통해
 									다양한 정보를 얻을 수 있으므로 여행이 익숙하지 않다면 적극 이용해보세요.</p>
 						          </div>
 						        </div>
@@ -196,12 +163,16 @@
 						      <div class="card">
 						        <div class="card-header">
 										  <a class="card-link" data-toggle="collapse"  href="#menu5" aria-expanded="false" aria-controls="menu5">
-										  질문 5
+										  회원 가입과 로그인
 										  <span class="collapsed"><i class="icon-plus-circle"></i></span><span class="expanded"><i class="icon-minus-circle"></i></span></a>
 						        </div>
 						        <div id="menu5" class="collapse">
 						          <div class="card-body">
-												<p>답변 5</p>
+						          <img src="<c:url value='/resources/images/about05_1.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+									<p>헤르메스는 카카오톡, 네이버 로그인을 지원합니다!
+									헤르메스의 회원이 되셔서 지도 정보를 저장하거나, 게시판에 글을 작성하셔서
+									당신의 일본 여행을 더욱 빛내 보세요!</p>
 						          </div>
 						        </div>
 						      </div>
@@ -209,12 +180,16 @@
 						      <div class="card">
 						        <div class="card-header">
 										  <a class="card-link" data-toggle="collapse"  href="#menu6" aria-expanded="false" aria-controls="menu6">
-										  질문 6 
+										  유저 정보(프로필)
 										  <span class="collapsed"><i class="icon-plus-circle"></i></span><span class="expanded"><i class="icon-minus-circle"></i></span></a>
 						        </div>
 						        <div id="menu6" class="collapse">
 						          <div class="card-body">
-												<p>답변 6.</p>
+						          <img src="<c:url value='/resources/images/about06.JPG'/>" style="width: 500px" height="300px">
+						          <hr>
+									<p>프로필 화면에서는 자신의 아이디, 메일 주소를 확인할 수 있습니다.
+									또한 비밀번호를 변경할 수 있으며 회원 탈퇴도 가능합니다.
+									저장된 여행 정보를 불러오는것도 가능합니다.</p>
 						          </div>
 						        </div>
 						      </div>

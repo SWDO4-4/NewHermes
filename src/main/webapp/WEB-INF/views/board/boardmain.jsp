@@ -88,14 +88,14 @@ body{
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a href="<c:url value='/board/boardRead?board_num=${boardList.board_num}'/>" class="block-20" 
-              	style="background-image: url('<c:url value='/resources/images/image_1.jpg'/>');">
+              	style= "background-image: url('https://folo.co.kr/img/gm_noimage.png');">
               </a>
               <div class="text p-4 d-block">
               	<span class="tag">${boardList.board_num}</span>
                 <h3 class="heading mt-3"><a href="<c:url value='/board/boardRead?board_num=${boardList.board_num}'/>">${boardList.board_title}</a></h3>
                 <div class="meta mb-3">
-                  <div>${boardList.board_inputdate}</div>
-                  <div>${boardList.user_id}</div>
+                  <div>${boardList.board_inputdate}</div><br>
+                  <div>작성자 : ${boardList.user_id}</div><br>
                   <div><span class="icon-chat"></span>댓글 수</div>
                 </div>
               </div>

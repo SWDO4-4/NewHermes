@@ -52,7 +52,7 @@
 		            var option = "width = 1200, height = 500, top = 100, left = 200, location = no"
 		            window.open(url, name, option);
 					}
-				,error: function(){alert("에러발생");}
+				,error: function(){alert("에러가 발생했습니다. 잠시 후에 시도해주세요.");}
 
 				
 			});
@@ -69,7 +69,7 @@ $(function(){
 		var moneyDoc = document.getElementById("money");
 		moneyDoc = Number(moneyDoc.value);
 		if(isNaN(moneyDoc)){
-				alert("숫자를 입력해주세요");
+				alert("숫자로만 입력 가능합니다.");
 			}
 		
 		
@@ -137,7 +137,7 @@ $(function(){
 		            var option = "width = 1200, height = 500, top = 100, left = 200, location = no"
 		            window.open(url, name, option);
 					}
-				,error: function(){alert("에러발생");}
+				,error: function(){alert("에러가 발생했습니다. 잠시 후에 시도해주세요.");}
 
 				
 			});
@@ -197,23 +197,23 @@ $(function(){
         <div class="row">
         	<div class="col-lg-3 sidebar ftco-animate">
         		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">지역을 검색하세요</h3>
-        			<form action="#">
-        				<div class="fields">
-		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="도시, 지역, 목적지">
-		              </div>
-		              <div class="form-group">
-		                <div class="select-wrap one-third">
-	                  	</div>
-		              </div>
-		              <div class="form-group">
-		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
-		              </div>
-		            </div>
-	            </form>
+<!--         			<h3 class="heading mb-4">지역을 검색하세요</h3> -->
+<!--         			<form action="#"> -->
+<!--         				<div class="fields"> -->
+<!-- 		              <div class="form-group"> -->
+<!-- 		                <input type="text" class="form-control" placeholder="도시, 지역, 목적지"> -->
+<!-- 		              </div> -->
+<!-- 		              <div class="form-group"> -->
+<!-- 		                <div class="select-wrap one-third"> -->
+<!-- 	                  	</div> -->
+<!-- 		              </div> -->
+<!-- 		              <div class="form-group"> -->
+<!-- 		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5"> -->
+<!-- 		              </div> -->
+<!-- 		            </div> -->
+<!-- 	            </form> -->
 	            
-	            <br><hr><br>
+<!-- 	            <br><hr><br> -->
 	            <h5>비행기 예약 정보</h5><br>
 	    
 	    <form id="fly_Information" method="get">
@@ -268,7 +268,7 @@ $(function(){
 		</table>
 		<input type="button" value="환전하기" id="exchange" class="btn btn-primary py-3 px-5"s>		
 	</form>
-	<br><br>
+	<br><hr><br>
 	
 	     <h5>축제 정보</h5><br>
 	    
@@ -317,7 +317,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/tokyo'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>
@@ -345,7 +345,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/osaka'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>
@@ -373,7 +373,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/kyoto'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>
@@ -401,7 +401,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/gobe'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>
@@ -418,7 +418,7 @@ $(function(){
 		    					<div class="text p-3">
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/gobe'/>">요쿄하마</a></h3>
+				    						<h3><a href="<c:url value='/tour/yokohama'/>">요코하마</a></h3>
 			    						</div>
 			    						<div class="two">
 			    							<span class="price">Yokohama</span>
@@ -429,7 +429,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/yokohama'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>
@@ -457,7 +457,7 @@ $(function(){
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    							<span class="ml-auto"><a href="<c:url value='/tour/nagoya'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>

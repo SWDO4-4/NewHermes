@@ -685,6 +685,25 @@ color: #a2a6af
                             <li class="email">${sessionScope.useremail}</li>
                         </ul>
                     </div>
+                    
+                    <br><hr><br>
+                    <h4>저장된 지도 정보</h4>
+                    <br>
+                            <div>
+                         	<table>
+								<c:forEach items="${requestScope.mapinfo}" var="mapinfo">
+								<tr>			
+  									<td>
+  										<a style="color: black;" href="<c:url value='/member/mapSend?map_title=${mapinfo.map_title}&map_origin=${mapinfo.map_origin}&waypoint_inputArr0=${mapinfo.waypoint_inputArr0}&waypoint_inputArr1=${mapinfo.waypoint_inputArr1}&waypoint_inputArr2=${mapinfo.waypoint_inputArr2}&waypoint_inputArr3=${mapinfo.waypoint_inputArr3}&waypoint_inputArr4=${mapinfo.waypoint_inputArr4}&map_destination=${mapinfo.map_destination}'/>">
+  											${mapinfo.map_title}
+  										</a>
+  										<input type="button" value="삭제" class="btn btn-primary">
+  									</td>
+								</tr>	
+								</c:forEach>
+							</table>
+                            </div>
+                    
                 </div>
                 <div class="content-panel">
                     <h2 class="title">유저 프로필 변경</h2>
@@ -701,7 +720,7 @@ color: #a2a6af
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">확인</label>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">비밀번호 확인</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="password" id="user_pwdChk" class="form-control" placeholder="비밀 번호를 입력해주세요.">
                                     <p class="help-block">위와 동일한 값을 입력하세요</p>
@@ -714,17 +733,7 @@ color: #a2a6af
                                 <input class="btn btn-primary" type="submit" value="프로필 갱신">
                                 <hr>
                              	<a href="<c:url value='/member/signout'/>"><input class="btn btn-primary" type="button" value="회원 탈퇴"></a>
-                            </div>
-                            <div>
-                            <table>
-									<c:forEach items="${requestScope.mapinfo}" var="mapinfo">
-										<tr>			
-
-  											<td><a href="<c:url value='/member/mapSend?map_title=${mapinfo.map_title}&map_origin=${mapinfo.map_origin}&waypoint_inputArr0=${mapinfo.waypoint_inputArr0}&waypoint_inputArr1=${mapinfo.waypoint_inputArr1}&waypoint_inputArr2=${mapinfo.waypoint_inputArr2}&waypoint_inputArr3=${mapinfo.waypoint_inputArr3}&waypoint_inputArr4=${mapinfo.waypoint_inputArr4}&map_destination=${mapinfo.map_destination}'/>">${mapinfo.map_title}</a></td>
-										</tr>	
-									</c:forEach>
-								</table>
-                            </div>
+                            </div>                           
                         </div>
                     </form>
                     
