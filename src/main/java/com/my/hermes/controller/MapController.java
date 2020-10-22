@@ -38,10 +38,4 @@ public class MapController {
 		
 		return "redirect:/map/mapmain";
 	}
-	
-	@RequestMapping(value = "/map/delete", method = RequestMethod.GET)
-	public String delete(String map_title) {
-		dao.mapdelete(map_title);
-		return "redirect:/member/profile";
-	}
 }
