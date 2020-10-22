@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script>
   function formCheck() {
 		var userpwdDoc = document.getElementById("user_pwd");
@@ -12,6 +13,8 @@
 			return false;
 		}
 	}
+
+  
   </script>
     <title>헤르메스 - 일본 여행의 길잡이</title>
     <style>
@@ -694,10 +697,11 @@ color: #a2a6af
 								<c:forEach items="${requestScope.mapinfo}" var="mapinfo">
 								<tr>			
   									<td>
+  										<form>
   										<a style="color: black;" href="<c:url value='/member/mapSend?map_title=${mapinfo.map_title}&map_origin=${mapinfo.map_origin}&waypoint_inputArr0=${mapinfo.waypoint_inputArr0}&waypoint_inputArr1=${mapinfo.waypoint_inputArr1}&waypoint_inputArr2=${mapinfo.waypoint_inputArr2}&waypoint_inputArr3=${mapinfo.waypoint_inputArr3}&waypoint_inputArr4=${mapinfo.waypoint_inputArr4}&map_destination=${mapinfo.map_destination}'/>">
   											${mapinfo.map_title}
   										</a>
-  										<input type="button" value="삭제" class="btn btn-primary">
+  										<a href="<c:url value='/map/delete?map_title=${mapinfo.map_title}'/>"><input type="button" value="삭제" class="btn btn-primary"></a>
   									</td>
 								</tr>	
 								</c:forEach>

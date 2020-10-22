@@ -58,4 +58,10 @@ public class TourController {
 	public String fukuoka() {
 		return "/tour/fukuoka";
 	}
+	
+	@RequestMapping(value = "/tour/citymove", method = RequestMethod.POST)
+	public String citymove(String cityname) {
+		
+		return "/tour/"+cityname+"";
+	}
 }
