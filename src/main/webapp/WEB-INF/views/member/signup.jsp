@@ -186,7 +186,7 @@
 										</div>
 										<div class="form-group form-button">
 											<input type="submit" name="signup" id="signup"
-												class="form-submit" value="회원가입" />
+												class="btn btn-primary" value="회원가입" />
 										</div>
 									</form>
 								</div>

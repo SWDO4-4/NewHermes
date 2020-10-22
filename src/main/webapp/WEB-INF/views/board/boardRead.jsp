@@ -83,40 +83,46 @@ body{
         <div class="row">
           <div class="col-md-8 ftco-animate">
             <h2 class="mb-3">${requestScope.vo.board_title}</h2>
-            <p>${requestScope.vo.board_content}</p>
-			<p>첨부파일 : <a href="<c:url value='/board/download?board_num=${requestScope.vo.board_num}'/>">${requestScope.vo.board_orifile}</a></p>            
+            <br><hr><br>
+            <h5>${requestScope.vo.board_content}</h5>
+            <br>
+            <input type="button" value="수정" class="btn btn-primary">
+	        <input type="button" value="삭제" class="btn btn-primary">
+            <hr><br>
+			<p>첨부파일 : <a href="<c:url value='/board/download?board_num=${requestScope.vo.board_num}'/>">${requestScope.vo.board_orifile}</a></p> 
+			<br>           
             <div class="about-author d-flex p-5 bg-light">
-              <div class="bio align-self-md-center mr-5">
-                <img src='<c:url value="/resources/images/person_1.jpg"/>' width="200" height="200" alt="Image placeholder" class="img-fluid mb-4">
-              </div>
               <div class="desc align-self-md-center">
-                <h3>${requestScope.vo.user_id}</h3>
+                <h5>작성자 : ${requestScope.vo.user_id}</h5>
                 <p>작성자 소개 글</p>
               </div>
             </div>
 
 
             <div class="pt-5 mt-5">
-              <h3 class="mb-5">${requestScope.replyCount}개의 리플</h3>
+              <h4 class="mb-5">${requestScope.replyCount}개의 리플이 있습니다.</h4>
+              <hr><br>
               <ul class="comment-list">
                 <c:forEach items="${requestScope.replyList}" var="replyList">
 	                <li class="comment">
-	                  <div class="vcard bio">
-	                    <img src='<c:url value="/resources/images/person_1.jpg"/>' alt="Image placeholder">
-	                  </div>
 	                  <div class="comment-body">
-	                    <h3>${replyList.user_id}</h3>
-	                    <div class="meta">${replyList.reply_inputdate}</div>
-	                    <p>${replyList.reply_content}</p>
+	                    <h4>리플 작성자 : ${replyList.user_id}</h4>
+	                    <div class="meta">작성 시각 : ${replyList.reply_inputdate}</div>
+	                    <br>
+	                    <h5>${replyList.reply_content}</h5>
+	                    <hr>
+	                    <input type="button" value="수정" class="btn btn-primary">
+	      				<input type="button" value="삭제" class="btn btn-primary">
 	                  </div>
 	                </li>
+	                
                 </c:forEach>
               </ul>
               <!-- END comment-list -->
               
               <div class="comment-form-wrap pt-5">
-                <h3 class="mb-5">리플 달기</h3>
                  <form action="<c:url value='/board/replyWrite?board_num=${requestScope.vo.board_num}' />" class="p-5 bg-light" method="post">
+                 <h4 class="mb-5">리플 달기</h4>
                   <div class="form-group">
                     <label for="name">작성자</label>
                     <input type="text" name="user_id" value="${sessionScope.userid}" readonly="readonly" class="form-control" id="name">
@@ -127,7 +133,7 @@ body{
                   </div>
                   <div class="form-group">
                     <label for="message">리플 내용</label>
-                    <textarea name="reply_content" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="reply_content" id="message" cols="20" rows="5" class="form-control"></textarea>
                   </div>
                   <div class="form-group">
                     <input type="submit" value="리플 달기" class="btn py-3 px-4 btn-primary">

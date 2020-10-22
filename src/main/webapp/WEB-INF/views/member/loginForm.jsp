@@ -156,7 +156,7 @@
 											<input type="password" name="user_pwd" id="userpwd" placeholder="비밀번호" />
 										</div>
 										<div class="form-group form-button">
-											<input type="submit" name="login" id="login" class="form-submit" value="로그인" />
+											<input type="submit" name="login" id="login" class="btn btn-primary" value="로그인" />
 										</div>
 										<div class="form-group form-button">
 											<img src="<c:url value='/resources/images/kakao_login.png' />" id="login-button">
@@ -183,6 +183,7 @@
 										<!-- // 네이버아이디로로그인 초기화 Script -->
 									</form>
 								</div>
+								<br><br>
 								<div class="signup-image">
 									<a href="/hermes" class="signup-image-link" style="color: white">메인 화면으로 돌아가기</a>
 								</div>
