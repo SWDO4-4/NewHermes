@@ -21,4 +21,7 @@ public interface MemberMapper {
 	
 	// 지도에저장된정보를 가져오는 기능
 	public ArrayList<MapVO> maptitle(String user_id);
+	
+	//회원탈퇴 기능
+	public void signout(String user_id);
 }
