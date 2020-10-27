@@ -18,5 +18,11 @@ public interface BoardMapper {
 
 	public ArrayList<ReplyVO> replyList(int board_num);
 	
+	public void change(BoardVO vo);
+	
+	public void boardDelete(int board_num);
+	
+	public void replyDelete(int reply_num);
+	
 
 }

@@ -45,9 +45,26 @@ public class BoardController {
 
 	// 글 수정 화면 이동
 	@RequestMapping(value = "/board/boardUpdate", method = RequestMethod.GET)
-	public String boardUpdate() {
+	public String boardUpdate(int board_num, Model model) {
+		model.addAttribute("board_num", board_num);
 		return "/board/boardUpdate";
 	}
+	// 글 수정 
+	@RequestMapping(value = "/board/change", method = RequestMethod.POST)
+	public String change(int board_num, BoardVO vo,Model model) {
+		vo.setBoard_num(board_num);
+		dao.change(vo);
+
+		return "redirect:/board/boardRead?board_num="+vo.getBoard_num();
+	}
+	// 글 삭제 
+	@RequestMapping(value = "/board/boardDelete", method = RequestMethod.GET)
+	public String boardDelete(int board_num) {
+		dao.boardDelete(board_num);
+		return "redirect:/board/boardmain";
+	}
+		
+		
 	
 	// 글쓰기 화면 이동
 	@RequestMapping(value = "/board/boardWrite", method = RequestMethod.GET)
@@ -77,5 +94,12 @@ public class BoardController {
 		int result = dao.replyWrite(vo);
 		return "redirect:/board/boardRead?board_num="+vo.getBoard_num();
 	}
+	
+	//댓글 삭제
+		@RequestMapping(value = "/board/replyDelete", method = RequestMethod.GET)
+		public String replyDelete(int reply_num,int board_num) {
+			dao.replyDelete(reply_num);
+			return "redirect:/board/boardRead?board_num="+board_num;
+		}
 	
 }

@@ -79,7 +79,34 @@ body{
       </div>
     </div>
 
-
+<section class="ftco-section ftco-degree-bg">
+	<div class="container">
+		<div class="col-md-8 ftco-animate">
+			<div class="pt-5 mt-5">
+				<div class="comment-form-wrap pt-5">
+	                <h3 class="mb-5">게시글 수정</h3>
+	               
+	                <form action="<c:url value='/board/change?board_num=${requestScope.board_num}'/>" method="post" class="p-5 bg-light" enctype="multipart/form-data">
+	                <input type="hidden" name="user_id" value='${sessionScope.userid}'>
+	                  <div class="form-group">
+	                    <label for="name">게시글 제목</label>
+	                    <input type="text" name="board_title" class="form-control" id="name">
+	                  </div>
+	                  <div class="form-group">
+	                    <label for="message">게시글 내용</label>
+	                    <textarea name="board_content" id="message" cols="30" rows="10" class="form-control"></textarea>
+	                  </div>
+	           
+	                  <div class="form-group">
+	                    <input type="submit" value="게시글 수정" class="btn py-3 px-4 btn-primary">
+	                  </div>
+	
+	                </form>
+	              </div>
+        	</div>
+     	</div>
+     	</div>
+     </section>
 
      <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
