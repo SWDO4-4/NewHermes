@@ -20,6 +20,7 @@
 			alert("비밀번호는 5~10글자로 입력해주세요.");
 			return false;
 		}
+		return true;
 	}
 
   
@@ -719,7 +720,7 @@ color: #a2a6af
                 </div>
                 <div class="content-panel">
                     <h2 class="title">유저 프로필 변경</h2>
-                    <form action="" method="post" class="form-horizontal" onsubmit="return formCheck()">
+                    <form action="<c:url value='/member/pwdUpdate'/>" method="post" class="form-horizontal" onsubmit="return formCheck()">
                         <fieldset class="fieldset">
                             <h3 class="fieldset-title">개인 정보</h3>
                         </fieldset>

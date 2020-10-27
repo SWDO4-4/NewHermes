@@ -142,7 +142,6 @@ public class MemberController {
 	public String pwdUpdate(MemberVO vo, HttpSession session, RedirectAttributes rttr) {
 		String user_id = (String)session.getAttribute("userid");
 		vo.setUser_id(user_id);
-		System.out.println(vo + "an");
 		int result = dao.pwdUpdate(vo);
 		if(result == 1) {
 			rttr.addFlashAttribute("updateResult", result);
