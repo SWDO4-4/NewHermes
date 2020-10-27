@@ -51,6 +51,15 @@
 	WHERE
 		user_id=#{user_id}
 	</select>
+	
+	<delete id="signout" parameterType="String">
+	 DELETE FROM
+	   	hermes_user
+	 WHERE
+	    user_id=#{user_id}
+	
+	
+	</delete>
 
 	
 </mapper>

@@ -130,7 +130,10 @@ public class MemberController {
 	
 	// 회원 탈퇴
 	@RequestMapping(value = "/member/signout", method = RequestMethod.GET)
-	public String signout() {
+	public String signout(HttpSession session) {
+		String userid = (String) session.getAttribute("userid");
+		dao.signout(userid);
+		dao.logout(session);
 		return "redirect:/";
 	}
 	

@@ -70,6 +70,30 @@
 		reply_inputdate
 	</select>
 	
+	<update id="change" parameterType="board">
+	update 
+		hermes_board
+	set
+		board_title = #{board_title},
+		board_content = #{board_content}
+	where
+		board_num = #{board_num}
+	</update>
+	
+	<delete id="boardDelete" parameterType="int">
+	delete from
+	 	hermes_board
+	where
+		board_num = #{board_num}
+	</delete>
+	
+	<delete id="replyDelete" parameterType="int">
+	delete from
+	 	hermes_reply
+	where
+		reply_num = #{reply_num}
+	</delete>
+	
 
 	
 </mapper>

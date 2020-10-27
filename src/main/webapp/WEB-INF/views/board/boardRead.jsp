@@ -86,8 +86,15 @@ body{
             <br><hr><br>
             <h5>${requestScope.vo.board_content}</h5>
             <br>
-            <input type="button" value="수정" class="btn btn-primary">
-	        <input type="button" value="삭제" class="btn btn-primary">
+            <c:choose>
+				<c:when test="${requestScope.vo.user_id == sessionScope.userid}">
+							<a href="<c:url value='/board/boardUpdate?board_num=${requestScope.vo.board_num}'/>"><input type="button" value="수정" class="btn btn-primary"></a> 
+	        				<a href="<c:url value='/board/boardDelete?board_num=${requestScope.vo.board_num}'/>"><input type="button" value="삭제" class="btn btn-primary"></a>
+				</c:when>
+				<c:otherwise>
+				</c:otherwise>
+            </c:choose>
+           
             <hr><br>
 			<p>첨부파일 : <a href="<c:url value='/board/download?board_num=${requestScope.vo.board_num}'/>">${requestScope.vo.board_orifile}</a></p> 
 			<br>           
@@ -111,8 +118,14 @@ body{
 	                    <br>
 	                    <h5>${replyList.reply_content}</h5>
 	                    <hr>
-	                    <input type="button" value="수정" class="btn btn-primary">
-	      				<input type="button" value="삭제" class="btn btn-primary">
+	                    <c:choose>
+							<c:when test="${replyList.user_id == sessionScope.userid}"> 
+				        				<a href="<c:url value='/board/replyDelete?reply_num=${replyList.reply_num}&board_num=${requestScope.vo.board_num}'/>"><input type="button" value="삭제" class="btn btn-primary"></a>
+							</c:when>
+							<c:otherwise>
+							</c:otherwise>
+			            </c:choose>
+	             
 	                  </div>
 	                </li>
 	                

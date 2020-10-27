@@ -38,6 +38,26 @@ public class BoardDAO {
 		return result;
 	}
 	
+	public void change(BoardVO vo) {
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.change(vo);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void boardDelete(int board_num) {
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.boardDelete(board_num);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public int write(BoardVO vo, MultipartFile uploadFile) {
 		int result = 0;
 		
@@ -111,6 +131,16 @@ public class BoardDAO {
 			e.printStackTrace();
 		}
 		return result;
+	}
+	
+	public void replyDelete(int reply_num) {
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.replyDelete(reply_num);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }

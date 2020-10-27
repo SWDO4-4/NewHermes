@@ -82,4 +82,17 @@ public class MemberDAO {
 		}
 		return result;
 	}
+	
+	//회원탈퇴 기능
+	
+		public void signout(String user_id) {
+			
+			try {
+				MemberMapper mapper = session.getMapper(MemberMapper.class);
+				mapper.signout(user_id);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
 }
