@@ -157,67 +157,6 @@ body{
             </div>
 
           </div> <!-- .col-md-8 -->
-          <div class="col-md-4 sidebar ftco-animate">
-            <div class="sidebar-box">
-              
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="키워드 검색">
-                </div>
-              </form>
-           
-            </div>
-            <div class="sidebar-box ftco-animate">
-              <div class="categories">
-                <h3>카테고리</h3>
-                <li><a href="#">여행 <span>N개</span></a></li>
-                <li><a href="#">팁 <span>N개</span></a></li>
-                <li><a href="#">관광지 <span>N개</span></a></li>
-                <li><a href="#">음식점 <span>N개</span></a></li>
-                <li><a href="#">호텔 <span>N개</span></a></li>
-                <li><a href="#">항공편 <span>N개</span></a></li>
-              </div>
-            </div>
-
-            <div class="sidebar-box ftco-animate">
-              <h3>최근 게시글</h3>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url('<c:url value='/resources/images/image_1.jpg'/>');"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">게시글 제목</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span>작성일</a></div>
-                    <div><a href="#"><span class="icon-person"></span>작성자</a></div>
-                    <div><a href="#"><span class="icon-chat"></span>리플 수</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url('<c:url value='/resources/images/image_2.jpg'/>');"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">게시글 제목</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span>작성일</a></div>
-                    <div><a href="#"><span class="icon-person"></span>작성자</a></div>
-                    <div><a href="#"><span class="icon-chat"></span>리플 수</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url('<c:url value='/resources/images/image_3.jpg'/>');"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">게시글 제목</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span>작성일</a></div>
-                    <div><a href="#"><span class="icon-person"></span>작성자</a></div>
-                    <div><a href="#"><span class="icon-chat"></span>리플 수</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
