@@ -11,6 +11,6 @@ public interface MapMapper {
 	public void mapwrite(MapVO vo);
 	
 	
-
+	public void mapdelete(String map_title);
 	
 }

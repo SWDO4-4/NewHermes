@@ -24,7 +24,13 @@
 	)
 	</insert>
 	
-		
+	<delete id="mapdelete" parameterType="String">
+	   DELETE FROM
+	   	hermes_map
+	   WHERE
+	      map_title=#{map_title}
+   </delete>
+	
 
 	
 </mapper>

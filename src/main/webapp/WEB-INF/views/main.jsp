@@ -73,19 +73,23 @@
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>헤르메스 <br></strong>일본 여행의 길잡이</h1>
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">관광지 정보부터 주변시설, 지도, 환율, 날씨, 항공편까지!</p>
             <div class="block-17 my-4">
-              <form action="" method="post" class="d-block d-flex">
+              <form action="<c:url value='/tour/citymove'/>" method="post" class="d-block d-flex">
                 <div class="fields d-block d-flex">
                   <div class="textfield-search one-third">
                   	<input type="text" class="form-control" placeholder="검색할 내용을 입력하세요">
                   </div>
                   <div class="select-wrap one-third">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select name="" id="" class="form-control" placeholder="키워드를 입력하세요">
-                      <option value="">도시 검색</option>
-                      <option value="">도쿄</option>
-                      <option value="">오사카</option>
-                      <option value="">고베</option>
-                      <option value="">교토</option>
+                     <select name="cityname" id="" class="form-control" placeholder="키워드를 입력하세요">
+                      <option value="tokyo">도쿄</option>
+                      <option value="osaka">오사카</option>
+                      <option value="gobe">고베</option>
+                      <option value="kyoto">교토</option>
+                      <option value="fukuoka">후쿠오카</option>
+                      <option value="nagoya">나고야</option>
+                      <option value="sapporo">삿포로</option>
+                      <option value="yokohama">요코하마</option>
+                      <option value="nara">나라</option>
                     </select>
                   </div>
                 </div>
