@@ -5,7 +5,7 @@
   <head>
   <c:choose>
   	<c:when test="${requestScope.updateResult == 1}">
-  		<script>alert("재로그인 해주십쇼");</script>
+  		<script>alert("비밀번호를 변경했습니다. 다시 로그인해주세요.");</script>
   	</c:when>
   </c:choose>
     <title>헤르메스 - 일본 여행의 길잡이</title>
