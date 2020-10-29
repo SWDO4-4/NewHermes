@@ -88,7 +88,7 @@ body{
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a href="<c:url value='/board/boardRead?board_num=${boardList.board_num}'/>" class="block-20" 
-              	style= "background-image: url('https://folo.co.kr/img/gm_noimage.png');">
+              	>
               </a>
               <div class="text p-4 d-block">
               	<span class="tag">${boardList.board_num}</span>
@@ -96,7 +96,7 @@ body{
                 <div class="meta mb-3">
                   <div>${boardList.board_inputdate}</div><br>
                   <div>작성자 : ${boardList.user_id}</div><br>
-                  <div><span class="icon-chat"></span>댓글 수</div>
+                  <div><span class="icon-chat"></span></div>
                 </div>
               </div>
             </div>
